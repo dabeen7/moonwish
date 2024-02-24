@@ -15,6 +15,46 @@
     crossorigin="anonymous"></script>
   <script
     src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/monthlycoding/2309_moonwish/wish.js"></script>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+  body {
+    /* 배경 이미지 설정 */
+    background-image: url('KakaoTalk_20240225_004201732.jpg');
+
+    /* 배경 이미지가 전체 화면을 채우도록 설정 */
+    background-size: cover;
+
+    /* 배경 이미지가 페이지와 함께 스크롤되지 않도록 설정 */
+    background-attachment: fixed;
+
+    /* 배경 이미지가 중앙에 위치하도록 설정 */
+    background-position: center center;
+
+    /* 배경 이미지 반복 방지 */
+    background-repeat: no-repeat;
+  }
+
+  
+  .front {
+    background-image: url('KakaoTalk_2.jpg');
+  }
+
+  .back {
+    background-image: url('캡처.PNG');
+    border-radius: 0%;
+  }
+
+  * {
+      font-family: "Gugi", cursive ;
+    } -- 구글폰트에서 Gugi체 다운받아 설정함
+
+  i5 {
+    color: deeppink;
+  }
+  
+</style>  
 </head>
 
 <body>
@@ -22,12 +62,12 @@
   <div class="wrap">
     <!-- 클래스 이름 채우기 : 양끝 세로 정렬 -->
     <div class="item-between">
-      <h2>보름달에 소원 보내기</h2>
+      <h2>응원 메시지 보내기</h2>
       <!-- 클래스 이름 채우기 : 가운데 세로 정렬 -->
       <div id="subtitles" class="item-center">
-        <div>내 마음을 담아 보름달에 소원을 빌어보세요</div>
-        <div>달님이 내가 보낸 소원의 편지를 받아주실 거에요 :)</div>
-      </div>
+        <div><i5>다빈에게 졸업축하 메시지를 보내보세요</i5></div>
+        <div><i5>졸업을 맞은 다빈에게 큰 힘이 될거에요 :)</i5></div>
+      </div> 
       <!-- 클래스 이름 채우기 : 달 외부 뼈대 -->
       <div class="moon">
         <!-- 클래스 이름 채우기 : 달 이미지 -->
@@ -37,25 +77,25 @@
       </div>
       <!-- 클래스 이름 채우기 : 가운데 세로 정렬 -->
       <div class="item-center">
-        <button id="hub-link" target="_blank">보름달에 빈 소원들
-          보러가기</button>
+        <button id="hub-link" target="_blank"><i5>다빈에게 전달한 응원들
+          보러가기</i5></button>
         <!-- 클래스 이름 채우기 : 가로 정렬 -->
         <div id="msg-form" class="item-row">
           <!-- 클래스 이름 채우기 : 입력 공간 -->
           <input id="nickname" type="text" class="submit-input" style="width: 4rem; margin-right: 0.5rem;"
             placeholder="닉네임" required>
           <!-- 클래스 이름 채우기 : 소원빌기 버튼 -->
-          <button id="submit-btn" class="submit-btn" onclick="sendMessage()">소원빌기</button>
+          <button id="submit-btn" class="submit-btn" onclick="sendMessage()">응원보내기</button>
         </div>
         <div>
           <!-- 클래스 이름 채우기 : 입력 공간 -->
-          <textarea id="message" type="text" class="submit-input" placeholder="소원을 달에 보내주세요" required></textarea>
+          <textarea id="message" type="text" class="submit-input" placeholder="다빈에게 응원 메시지를 전해보아요" required></textarea>
         </div>
       </div>
     </div>
   </div>
   <!-- 클래스 이름 채우기 : 편지 -->
-  <div class=""></div>
+  <div class="letter"></div>
 
 
 
